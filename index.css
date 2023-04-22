@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+h1 {
+    text-align: center;
+    color: brown;
+    padding: 20px;
+}
+
+nav {
+    background-color: black;
+    display: grid;
+    place-items: center;
+    justify-content: space-evenly;
+}
+
+nav .ul {
+    list-style-type: none;
+}
+
+.ul {
+    line-height: 100px;
+    justify-content: space-evenly;
+}
+
+.ul a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .ul a {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s ease-in;
+    font-size: 18px;
+}
+
+nav ul a:hover {
+    background-color: chocolate;
+    color: white;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+
+.item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.item img:hover {
+    transform: scale(1.04);
+}
+
+.item h4 {
+    padding: 5px;
+    text-align: center;
+}
+
+.item button {
+    padding: 5px 30px;
+    border: none;
+    background-color: grey;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s all;
+}
+
+.item button:hover {
+    transform: scale(1.08);
+}
+
+@media screen and(max-width:1000px) {
+    .items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and(max-width:700px) {
+    .items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+button {
+    padding: 12px;
+    width: 190px;
+    cursor: pointer;
+    background: #799be6;
+    color: black;
+    transition: .5s ease;
+    border-radius: 10px;
+}
+
+button:hover {
+    background: transparent;
+    border: 2px solid #799be6;
+    box-shadow: 0 0 10px 0 #799be6 inset'
+ 0 0 10px 4px #799be6;
+    border-radius: 10px;
+}
